@@ -46,6 +46,5 @@ var twoCitySchedCost = function (costs) {
     for (i = length / 2; i < length; i++) {
         ans += costs[i][1];
     }
-    console.log(costs);
     return ans
 };
