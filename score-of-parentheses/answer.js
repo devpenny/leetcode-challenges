@@ -22,6 +22,9 @@
 
 ///////////////////////////////////////////////////////////////////////////////////
 
+
+const s = "()()()(())"
+
 var scoreOfParentheses = function (s) {
     var score = 0;
     var depth = 0;
@@ -35,5 +38,8 @@ var scoreOfParentheses = function (s) {
             }
         }
     }
+    console.log(score)
     return score;
 }
+
+scoreOfParentheses(s)
