@@ -44,3 +44,26 @@ var maxArea = function (height) {
     }
     return distance
 };
+
+
+
+///////////////////////
+
+
+var maxArea = function (height) {
+    let out = 0
+    let left = 0
+    let right = height.length - 1
+    while (left < right) {
+        let waterLevel = Number
+        if (height[left] > height[right]) {
+            waterLevel = height[right] * (right - left)
+            right--;
+        } else {
+            waterLevel = height[left] * (right - left)
+            left++;
+        }
+        out = Math.max(waterLevel, out);
+    }
+    return out
+};
